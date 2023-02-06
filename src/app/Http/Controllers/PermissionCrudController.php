@@ -44,7 +44,11 @@ class PermissionCrudController extends CrudController
             'label' => trans('backpack::permissionmanager.name'),
             'type'  => 'text',
         ]);
-
+        $this->crud->addColumn([
+            'name'  => 'title',
+            'label' => trans('backpack::permissionmanager.title'),
+            'type'  => 'text',
+        ]);
         if (config('backpack.permissionmanager.multiple_guards')) {
             $this->crud->addColumn([
                 'name'  => 'guard_name',
@@ -82,7 +86,11 @@ class PermissionCrudController extends CrudController
             'label' => trans('backpack::permissionmanager.name'),
             'type'  => 'text',
         ]);
-
+        $this->crud->addField([
+            'name'  => 'title',
+            'label' => trans('backpack::permissionmanager.title'),
+            'type'  => 'text',
+        ]);
         if (config('backpack.permissionmanager.multiple_guards')) {
             $this->crud->addField([
                 'name'    => 'guard_name',

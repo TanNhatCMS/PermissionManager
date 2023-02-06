@@ -11,6 +11,7 @@ return [
     |
     */
     'name'                  => 'Name',
+    'title'                  => 'Title',
     'role'                  => 'Role',
     'roles'                 => 'Roles',
     'roles_have_permission' => 'Roles that have this permission',

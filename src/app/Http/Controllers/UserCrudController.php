@@ -69,7 +69,7 @@ class UserCrudController extends CrudController
                     });
                 }
             );
-
+        }
             // Extra Permission Filter
             $this->crud->addFilter(
                 [
@@ -84,7 +84,7 @@ class UserCrudController extends CrudController
                     });
                 }
             );
-        }
+
     }
 
     public function setupCreateOperation()

@@ -11,6 +11,7 @@ return [
     |
     */
     'name'                  => 'Tên',
+    'title'                  => 'Tiêu Đề',
     'role'                  => 'Vai trò',
     'roles'                 => 'Các vai trò',
     'roles_have_permission' => 'Các vai trò được cấp quyền này',

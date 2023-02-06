@@ -48,7 +48,11 @@ class RoleCrudController extends CrudController
             'label' => trans('backpack::permissionmanager.name'),
             'type'  => 'text',
         ]);
-
+        $this->crud->addColumn([
+            'name'  => 'title',
+            'label' => trans('backpack::permissionmanager.title'),
+            'type'  => 'text',
+        ]);
         /**
          * Show a column with the number of users that have that particular role.
          *
@@ -125,6 +129,12 @@ class RoleCrudController extends CrudController
         $this->crud->addField([
             'name'  => 'name',
             'label' => trans('backpack::permissionmanager.name'),
+            'type'  => 'text',
+        ]);
+
+        $this->crud->addColumn([
+            'name'  => 'title',
+            'label' => trans('backpack::permissionmanager.title'),
             'type'  => 'text',
         ]);
 
